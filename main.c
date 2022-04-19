@@ -14,7 +14,7 @@
 
 const int led_gpio = 2;
 
-#define MOTION_SENSOR_GPIO 12
+#define MOTION_SENSOR_GPIO 0
 
 void led_write(bool on) {
         gpio_write(led_gpio, on ? 0 : 1);
