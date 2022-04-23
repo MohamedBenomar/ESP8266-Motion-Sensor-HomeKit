@@ -83,11 +83,11 @@ homekit_accessory_t *accessories[] = {
                         HOMEKIT_CHARACTERISTIC(MANUFACTURER, "Mohamed Benomar"),
                         HOMEKIT_CHARACTERISTIC(SERIAL_NUMBER, "4321M0110N"),
                         HOMEKIT_CHARACTERISTIC(MODEL, "Motion Sensor"),
-                        HOMEKIT_CHARACTERISTIC(FIRMWARE_REVISION, "0.1"),
+                        HOMEKIT_CHARACTERISTIC(FIRMWARE_REVISION, "2.0.0"),
                         HOMEKIT_CHARACTERISTIC(IDENTIFY, identify),
                         NULL
                 }),
-                HOMEKIT_SERVICE(MOTION_SENSOR, .primary=true, .characteristics=(homekit_characteristic_t*[]){
+                HOMEKIT_SERVICE(OCCUPANCY_SENSOR, .primary=true, .characteristics=(homekit_characteristic_t*[]){
                         HOMEKIT_CHARACTERISTIC(NAME, "Motion Sensor"),
                         &motion_detected,
                         NULL
